@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50D337DC1FB58F1600445271 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D337D61FB58F1600445271 /* libcrypto.a */; };
+		50D337DD1FB58F1600445271 /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D337D71FB58F1600445271 /* libcrypto.1.0.0.dylib */; };
+		50D337DE1FB58F1600445271 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D337D81FB58F1600445271 /* libssl.a */; };
+		50D337DF1FB58F1600445271 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D337D91FB58F1600445271 /* libssl.dylib */; };
+		50D337E01FB58F1600445271 /* libssl.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D337DA1FB58F1600445271 /* libssl.1.0.0.dylib */; };
+		50D337E11FB58F1600445271 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D337DB1FB58F1600445271 /* libcrypto.dylib */; };
+		50D337EB1FB59F4600445271 /* crt.c in Sources */ = {isa = PBXBuildFile; fileRef = 50D337E71FB59F4500445271 /* crt.c */; };
+		50D337EC1FB59F4600445271 /* p7b.c in Sources */ = {isa = PBXBuildFile; fileRef = 50D337E81FB59F4500445271 /* p7b.c */; };
+		50D337ED1FB59F4600445271 /* req.c in Sources */ = {isa = PBXBuildFile; fileRef = 50D337E91FB59F4500445271 /* req.c */; };
+		50D337EF1FB59F5600445271 /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 50D337EE1FB59F5600445271 /* key.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50D337BB1FB5890500445271 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		50D337BD1FB5890500445271 /* OpenSSl_demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenSSl_demo; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D337D61FB58F1600445271 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = OpenSSl_demo/lib/libcrypto.a; sourceTree = "<group>"; };
+		50D337D71FB58F1600445271 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.1.0.0.dylib; path = OpenSSl_demo/lib/libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
+		50D337D81FB58F1600445271 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = OpenSSl_demo/lib/libssl.a; sourceTree = "<group>"; };
+		50D337D91FB58F1600445271 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = OpenSSl_demo/lib/libssl.dylib; sourceTree = "<group>"; };
+		50D337DA1FB58F1600445271 /* libssl.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.1.0.0.dylib; path = OpenSSl_demo/lib/libssl.1.0.0.dylib; sourceTree = "<group>"; };
+		50D337DB1FB58F1600445271 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = OpenSSl_demo/lib/libcrypto.dylib; sourceTree = "<group>"; };
+		50D337E71FB59F4500445271 /* crt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crt.c; sourceTree = "<group>"; };
+		50D337E81FB59F4500445271 /* p7b.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = p7b.c; sourceTree = "<group>"; };
+		50D337E91FB59F4500445271 /* req.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = req.c; sourceTree = "<group>"; };
+		50D337EE1FB59F5600445271 /* key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50D337BA1FB5890500445271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D337DC1FB58F1600445271 /* libcrypto.a in Frameworks */,
+				50D337DD1FB58F1600445271 /* libcrypto.1.0.0.dylib in Frameworks */,
+				50D337DE1FB58F1600445271 /* libssl.a in Frameworks */,
+				50D337DF1FB58F1600445271 /* libssl.dylib in Frameworks */,
+				50D337E01FB58F1600445271 /* libssl.1.0.0.dylib in Frameworks */,
+				50D337E11FB58F1600445271 /* libcrypto.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50D337B41FB5890500445271 = {
+			isa = PBXGroup;
+			children = (
+				50D337BF1FB5890500445271 /* OpenSSl_demo */,
+				50D337BE1FB5890500445271 /* Products */,
+				50D337D51FB58F1500445271 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		50D337BE1FB5890500445271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D337BD1FB5890500445271 /* OpenSSl_demo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50D337BF1FB5890500445271 /* OpenSSl_demo */ = {
+			isa = PBXGroup;
+			children = (
+				50D337E71FB59F4500445271 /* crt.c */,
+				50D337EE1FB59F5600445271 /* key.c */,
+				50D337E81FB59F4500445271 /* p7b.c */,
+				50D337E91FB59F4500445271 /* req.c */,
+			);
+			path = OpenSSl_demo;
+			sourceTree = "<group>";
+		};
+		50D337D51FB58F1500445271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50D337D71FB58F1600445271 /* libcrypto.1.0.0.dylib */,
+				50D337D61FB58F1600445271 /* libcrypto.a */,
+				50D337DB1FB58F1600445271 /* libcrypto.dylib */,
+				50D337DA1FB58F1600445271 /* libssl.1.0.0.dylib */,
+				50D337D81FB58F1600445271 /* libssl.a */,
+				50D337D91FB58F1600445271 /* libssl.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50D337BC1FB5890500445271 /* OpenSSl_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D337C41FB5890500445271 /* Build configuration list for PBXNativeTarget "OpenSSl_demo" */;
+			buildPhases = (
+				50D337B91FB5890500445271 /* Sources */,
+				50D337BA1FB5890500445271 /* Frameworks */,
+				50D337BB1FB5890500445271 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenSSl_demo;
+			productName = OpenSSl_demo;
+			productReference = 50D337BD1FB5890500445271 /* OpenSSl_demo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50D337B51FB5890500445271 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Bill.Chang;
+				TargetAttributes = {
+					50D337BC1FB5890500445271 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 50D337B81FB5890500445271 /* Build configuration list for PBXProject "OpenSSl_demo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50D337B41FB5890500445271;
+			productRefGroup = 50D337BE1FB5890500445271 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50D337BC1FB5890500445271 /* OpenSSl_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50D337B91FB5890500445271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D337EF1FB59F5600445271 /* key.c in Sources */,
+				50D337EC1FB59F4600445271 /* p7b.c in Sources */,
+				50D337ED1FB59F4600445271 /* req.c in Sources */,
+				50D337EB1FB59F4600445271 /* crt.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		50D337C21FB5890500445271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		50D337C31FB5890500445271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		50D337C51FB5890500445271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /Users/bill.chang/Documents/Code/OpenSSl_demo/OpenSSl_demo/include;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/bill.chang/Documents/Code/OpenSSl_demo/OpenSSl_demo/lib,
+					"$(PROJECT_DIR)/OpenSSl_demo/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50D337C61FB5890500445271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /Users/bill.chang/Documents/Code/OpenSSl_demo/OpenSSl_demo/include;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/bill.chang/Documents/Code/OpenSSl_demo/OpenSSl_demo/lib,
+					"$(PROJECT_DIR)/OpenSSl_demo/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50D337B81FB5890500445271 /* Build configuration list for PBXProject "OpenSSl_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D337C21FB5890500445271 /* Debug */,
+				50D337C31FB5890500445271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D337C41FB5890500445271 /* Build configuration list for PBXNativeTarget "OpenSSl_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D337C51FB5890500445271 /* Debug */,
+				50D337C61FB5890500445271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50D337B51FB5890500445271 /* Project object */;
+}
