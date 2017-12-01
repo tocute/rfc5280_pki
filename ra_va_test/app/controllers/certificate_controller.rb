@@ -207,8 +207,8 @@ class CertificateController < ApplicationController
 		else
 			ca_cert = OpenSSL::X509::Certificate.new File.read 'cert/root_ca.crt'
 		end
-
-		p7b = OpenSSL::PKCS7::sign(ee_cert, ee_key, orignal_message)
+		en_str = orignal_message.encode("utf-16le")
+		p7b = OpenSSL::PKCS7::sign(ee_cert, ee_key, en_str)
 		#puts "[CertificateController<signature>] == p7b #{p7b}"
 
 		cert_store = OpenSSL::X509::Store.new()
@@ -220,7 +220,8 @@ class CertificateController < ApplicationController
 		else
 			puts "[CertificateController<signature>] verify fail"
 		end
-
+		der = p7b.to_der
+		puts "[CertificateController<signature>] p7b #{p7b.signers[0].name} "
   	puts "[CertificateController<signature>] <=="
   	return send_data p7b.to_pem, filename: 'message.p7b'
   rescue => e
