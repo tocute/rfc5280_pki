@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <!--1、在web.xml配置监听器ContextLoaderListener-->  
+    <!--ContextLoaderListener的作用就是启动Web容器时，自动装配ApplicationContext的配置信息。
+        因为它实现了ServletContextListener这个接口，在web.xml配置这个监听器，启动容器时，就会默认执行它实现的方法。  
+        在ContextLoaderListener中关联了ContextLoader这个类，所以整个加载配置过程由ContextLoader来完成。  --> 
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    
+    <!--2、部署applicationContext的xml文件-->  
+    <!--如果在web.xml中不写任何参数配置信息，默认的路径是"/WEB-INF/applicationContext.xml，  
+    在WEB-INF目录下创建的xml文件的名称必须是applicationContext.xml。  
+    如果是要自定义文件名可以在web.xml里加入contextConfigLocation这个context参数：  
+    在<param-value> </param-value>里指定相应的xml文件名，如果有多个xml文件，可以写在一起并以“,”号分隔。  
+    也可以这样applicationContext-*.xml采用通配符，比如这那个目录下有applicationContext-ibatis-base.xml，  
+    applicationContext-action.xml，applicationContext-ibatis-dao.xml等文件，都会一同被载入。  
+    在ContextLoaderListener中关联了ContextLoader这个类，所以整个加载配置过程由ContextLoader来完成。--> 
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/applicationContext.xml</param-value>
+    </context-param>
+    
+    <!-- 在DispatcherServlet的初始化过程中，框架会在web应用的 WEB-INF文件夹下寻找名为 
+         dispatcher-servlet.xml -->
+<!--     DispatcherServlet是前置控制器，配置在web.xml文件中的。
+         拦截匹配的请求，Servlet拦截匹配规则要自已定义，把拦截下来的请求，
+         依据相应的规则分发到目标Controller来处理，是配置spring MVC的第一步。-->
+    <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    
+    <!--会话超时配置，单位分钟-->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    
+    <welcome-file-list>
+        <welcome-file>redirect.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <error-page> <!--当系统出现404错误，跳转到页面nopage.html-->  
+        <error-code>404</error-code>  
+        <location>/nopage.html</location>  
+    </error-page>
+    
+    
+  <!-- configure the HiddenHttpMethodFilter,convert the post method to put or delete -->
+<!--  <filter>
+      <filter-name>HiddenHttpMethodFilter</filter-name>
+      <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>HiddenHttpMethodFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>-->
+  
+</web-app>

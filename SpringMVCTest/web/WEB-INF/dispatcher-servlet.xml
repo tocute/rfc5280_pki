@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- SpringMVC配置文件所需的xml  namespace  -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+                    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+                    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <!-- 配置Controller要掃描的package路徑 -->
+    <context:component-scan base-package="com.twca.ca"/>
+    <context:component-scan base-package="com.twca.restful"/>
+    <mvc:default-servlet-handler/>
+    <!-- 可將 Path 中的一部分轉為 controller 的參數 -->
+    <mvc:annotation-driven/>
+   
+    <bean class = "org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+      <property name = "exceptionMappings">
+         <props>
+            <prop key = "com.twca.exception">
+               ExceptionPage
+            </prop>
+         </props>
+      </property>
+      <property name = "defaultErrorView" value = "error"/>
+   </bean>
+   
+   <!-- upload settings -->
+   <bean id="multipartResolver"  class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+       <property name="maxUploadSize" value="102400000"></property>
+   </bean>
+    
+    <!-- 配置view -->
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp">
+          <!-- 解析器解析/WEB-INF/jsp/路徑下，以.jsp結尾的視圖文件 -->
+    </bean>
+    
+
+   
+   
+</beans>
