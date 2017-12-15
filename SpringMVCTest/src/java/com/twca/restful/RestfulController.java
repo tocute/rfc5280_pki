@@ -6,6 +6,8 @@
 package com.twca.restful;
 
 import com.twca.exception.SpringException;
+import com.twca.hello.*;
+
 import java.io.FileOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -23,6 +25,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.json.JSONObject;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
@@ -34,6 +38,20 @@ public class RestfulController {
     @RequestMapping(value = "/user", method = RequestMethod.GET)
     public String index()
     {
+        ApplicationContext context = new ClassPathXmlApplicationContext("beam.xml");
+        
+//        HelloWorld objA = (HelloWorld) context.getBean("helloWorld");
+//        objA.getMessage1();
+//        objA.getMessage2();
+//
+//        HelloIndia objB = (HelloIndia) context.getBean("helloIndia");
+//        objB.getMessage1();
+//        objB.getMessage2();
+//        objB.getMessage3();
+        
+        TextEditor te = (TextEditor) context.getBean("textEditor");
+        te.spellCheck();
+      
         System.out.println("Show ");
         return "restful";
     }

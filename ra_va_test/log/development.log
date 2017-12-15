@@ -4204,3 +4204,200 @@ Sent data message.p7b (1.1ms)
 Completed 200 OK in 6ms (Views: 0.9ms)
 
 
+Started POST "/certificate/auto_get_pfx?subject=CN=Bill.Rails.Test&password=[FILTERED]" for 127.0.0.1 at 2017-11-29 17:40:38 +0800
+Processing by CertificateController#autoGenPfx as */*
+  Parameters: {"subject"=>"CN=Bill.Rails.Test", "password"=>"[FILTERED]", "certificate"=>{}}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data client.p12 (176.9ms)
+Completed 200 OK in 2662ms (Views: 3.2ms)
+
+
+Started POST "/certificate/auto_get_pfx?subject=CN=Bill.Rails.Test&password=[FILTERED]" for 127.0.0.1 at 2017-11-29 17:40:44 +0800
+Processing by CertificateController#autoGenPfx as */*
+  Parameters: {"subject"=>"CN=Bill.Rails.Test", "password"=>"[FILTERED]", "certificate"=>{}}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data client.p12 (0.7ms)
+Completed 200 OK in 1190ms (Views: 0.5ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-29 17:41:12 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"Bill say Hello 2", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fbea8262348 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171129-3036-1qgds3w.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.4ms)
+Completed 200 OK in 5ms (Views: 0.3ms)
+
+
+Started POST "/certificate/auto_get_pfx?subject=CN=Bill.Rails.Test&password=[FILTERED]" for 127.0.0.1 at 2017-11-30 16:10:19 +0800
+Processing by CertificateController#autoGenPfx as */*
+  Parameters: {"subject"=>"CN=Bill.Rails.Test", "password"=>"[FILTERED]", "certificate"=>{}}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data client.p12 (184.4ms)
+Completed 200 OK in 1289ms (Views: 3.7ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:11:04 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fd46fcff940 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1317-2ttunq.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data message.p7b (1.5ms)
+Completed 200 OK in 7ms (Views: 1.1ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:22:02 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc08d629c8 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1378-14htcwm.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (154.1ms)
+Completed 200 OK in 164ms (Views: 2.2ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:26:33 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc08d68850 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1378-1jmvt99.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.7ms)
+Completed 200 OK in 5ms (Views: 0.6ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:30:05 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc0ab73278 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1378-bsfc6v.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.6ms)
+Completed 200 OK in 5ms (Views: 0.5ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:30:48 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc09b78170 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1378-uzhyoz.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.6ms)
+Completed 200 OK in 5ms (Views: 0.5ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:31:06 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc08abc7f0 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1378-1cuadl3.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (1.0ms)
+Completed 200 OK in 5ms (Views: 0.9ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:31:16 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc09277f08 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1378-162ij72.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.4ms)
+Completed 200 OK in 4ms (Views: 0.3ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:31:51 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc0d013d30 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1378-1rip5tp.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+Completed 200 OK in 6ms (Views: 0.2ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:32:08 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc08d91138 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1378-odi4sv.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.6ms)
+Completed 200 OK in 5ms (Views: 0.4ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:36:48 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD\\n", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc09e903f8 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1378-rfqnt5.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.4ms)
+Completed 200 OK in 4ms (Views: 0.3ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:53:07 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fc85dd6ab00 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1614-12hz99k.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (143.9ms)
+Completed 200 OK in 155ms (Views: 2.1ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 16:53:09 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007fc85d49f8b8 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1614-1htgvuk.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.5ms)
+Completed 200 OK in 4ms (Views: 0.3ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 17:01:56 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007f9be0c23070 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1674-1w7us18.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (150.0ms)
+Completed 200 OK in 159ms (Views: 4.4ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 17:05:16 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007f9be2472bf8 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1674-42se9q.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.7ms)
+Completed 200 OK in 5ms (Views: 0.6ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 17:06:00 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007f9be15d7468 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1674-z9p7p3.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.6ms)
+Completed 200 OK in 4ms (Views: 0.5ms)
+
+
+Started POST "/certificate/ca" for 127.0.0.1 at 2017-11-30 17:07:28 +0800
+Processing by CertificateController#signature as */*
+  Parameters: {"orignal_message"=>"GOOD", "p12"=>#<ActionDispatch::Http::UploadedFile:0x00007f9be14f69b8 @tempfile=#<Tempfile:/var/folders/3_/mcfjmkn55lsc9tz1yt2vcdwh0000gq/T/RackMultipart20171130-1674-g20of.pfx>, @original_filename="response.pfx", @content_type="application/x-pkcs12", @headers="Content-Disposition: form-data; name=\"p12\"; filename=\"response.pfx\"\r\nContent-Type: application/x-pkcs12\r\n">, "password"=>"[FILTERED]"}
+HTTP Origin header (chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop) didn't match request.base_url (http://localhost:3000)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data message.p7b (0.6ms)
+Completed 200 OK in 5ms (Views: 0.4ms)
+
+
